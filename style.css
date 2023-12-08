@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #006400; /* Đổi màu nền thành xanh lá đậm */
+}
+
+header {
+    background-color: #072a0a; /* Màu nền đỏ cho header */
+    padding: 10px;
+    text-align: center;
+    width: 60%; /* Đặt chiều rộng 100% */
+    position: fixed; /* Sử dụng position fixed để giữ header ở trên cùng khi cuộn trang */
+    top: 0;
+    z-index: 1000; /* Z-index để header hiển thị trên cùng */
+}
+
+header h1 {
+    margin: 0;
+    color: #ff0000; /* Màu chữ đỏ */
+    font-family: 'Neon', sans-serif; /* Sử dụng font chữ Neon */
+}
+
+#togglePlaylistBtn {
+    background-color: #ff0000; /* Màu đỏ cho nút toggle playlist */
+    color: #000000; /* Màu chữ xanh lá đậm */
+}
+
+
+.christmas-tree {
+    background: url('photo/caythong.gif') no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.music-player {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #006400; /* Màu chữ xanh lá đậm */
+}
+
+#playPauseBtn,
+#prevBtn,
+#nextBtn {
+    background-color: #ff0000; /* Màu đỏ cho nút play/pause, previous và next */
+    color: #000000; /* Màu chữ xanh lá đậm */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ff0000; /* Viền */
+    border-radius: 8px; 
+}
+
+li {
+    margin: 5px;
+    cursor: pointer;
+    text-align: left;
+    color:#ff0000;
+}
+
+li:hover {
+    background-color: #ffffff; /* Màu nền khi di chuột qua một bài hát */
+}
+
+audio {
+    display: none;
+}
